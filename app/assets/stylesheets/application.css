@@ -27,6 +27,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
+h2 {
+  margin-bottom: 20px;
+  font-size: medium;
+}
+
 /* Link Styles */
 a {
   text-decoration: none;

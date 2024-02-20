@@ -1,9 +1,19 @@
+<% open_tasks_count = @tasks.reject { |task| task.completed }.count %>
 <h1>My Tasks</h1>
+<h2> (Open Tasks: <%= open_tasks_count %>)</h2>
+
 
 <% @tasks.each do |task| %>
-    <ul>
-      <li><%= link_to task.title, task_path(task) %></li>
-    </ul>
+  <ul>
+    <li>
+      <%= link_to task.title, task_path(task) %>
+      <% if task.completed %>
+        <span class="task-completed">&#10003;</span> <!-- Tick mark for completed tasks -->
+      <% else %>
+        <span class="task-not-completed">&#10007;</span> <!-- Cross mark for incomplete tasks -->
+      <% end %>
+    </li>
+  </ul>
 <% end %>
 
 <%= link_to 'Add New Task', tasks_new_path, class: 'button' %>
