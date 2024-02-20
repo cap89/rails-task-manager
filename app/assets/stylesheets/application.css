@@ -13,3 +13,129 @@
  *= require_tree .
  *= require_self
  */
+/* Base Styles */
+body {
+  width: 30%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #003b7a;
+  text-decoration: none;
+  color: white;
+}
+
+
+#submit {
+  display: inline-block;
+  background-color: #00940aea;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#submit:hover {
+  background-color: #007e08ea;
+  text-decoration: none;
+  color: white;
+}
+
+/* Form Styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+input[type="text"], input[type="checkbox"], input[type="submit"], select, textarea {
+  width: 100%;
+  padding: .375rem .75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  display: inline-block; /* Adjusts checkbox positioning */
+  margin-right: 10px; /* Adds space between the checkbox and its label */
+}
+
+/* Fixes checkbox alignment */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+/* Custom checkbox alignment */
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  margin-right: 5px; /* Space between checkbox and label */
+}
